@@ -6,3 +6,4 @@ C:\curso_api_netcore\src\Api.Domain\bin\Debug\netcoreapp3.1\Domain.dll
 C:\curso_api_netcore\src\Api.Domain\bin\Debug\netcoreapp3.1\Domain.pdb
 C:\curso_api_netcore\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.dll
 C:\curso_api_netcore\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.pdb
+C:\curso_api_netcore\src\Api.Domain\obj\Debug\netcoreapp3.1\Domain.csprojAssemblyReference.cache
