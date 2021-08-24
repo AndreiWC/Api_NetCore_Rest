@@ -19,10 +19,31 @@ namespace Api.Data.Repository
             _dataset = _context.Set<T>();
 
         }
-
-        public Task<bool> DeleteAsync(Guid id)
+        // Implementa o delete no banco via id do registro
+        public async Task<bool> DeleteAsync(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {    
+                //recebe no result o valor retornado do banco        
+                var result = await _dataset.SingleOrDefaultAsync(p => p.Id.Equals(id));
+                //verifica se o result esta null, caso esteja sai da função
+                if (result==null)
+                {
+                    return false;
+                }
+                //remove o resultado do banco
+                _dataset.Remove(result);
+                // realiza o commit da exclusão
+                await _context.SaveChangesAsync();
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                
+                throw ex;
+            }
+           
         }
 
         // Implementação de Insert no database
@@ -46,18 +67,42 @@ namespace Api.Data.Repository
 
                 throw ex;
             }
-
+ 
             return item;
         }
-
-        public Task<T> SelectAsync(Guid id)
+ 
+        //Retorna o registro da tabela do banco de dados de acordo com o id passado
+        public async Task<T> SelectAsync(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                return await _dataset.SingleOrDefaultAsync(p => p.Id.Equals(id));
+            }
+            catch (Exception ex)
+            {
+                
+                throw ex;
+            }
         }
 
-        public Task<IEnumerable<T>> SelectAsync()
+        // Retorna true se o registrio existe na tabela do banco de dados
+        public async Task<bool> ExistAsync(Guid id)
         {
-            throw new NotImplementedException();
+             return await _dataset.AnyAsync(p => p.Id.Equals(id));
+        }
+
+        //Retorna uma lista com os registros da tabela (Select sem where)
+        public async Task<IEnumerable<T>> SelectAsync()
+        {
+            try
+            {
+                return await _dataset.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                
+                throw ex;
+            }
         }
 
 
@@ -92,5 +137,6 @@ namespace Api.Data.Repository
             // se tudo der certo retorna o item
             return item;
         }
+ 
     }
 }
