@@ -10,3 +10,6 @@ C:\curso_api_netcore\src\Api.Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.jso
 C:\curso_api_netcore\src\Api.Data\bin\Debug\netcoreapp3.1\Data.runtimeconfig.dev.json
 C:\curso_api_netcore\src\Api.Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache
 C:\curso_api_netcore\src\Api.Data\obj\Debug\netcoreapp3.1\Data.genruntimeconfig.cache
+C:\curso_api_netcore\src\Api.Data\bin\Debug\netcoreapp3.1\Domain.dll
+C:\curso_api_netcore\src\Api.Data\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\curso_api_netcore\src\Api.Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete

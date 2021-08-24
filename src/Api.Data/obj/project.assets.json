@@ -1325,6 +1325,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
       }
     }
   },
@@ -5083,10 +5093,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Api.Domain/Domain.csproj",
+      "msbuildProject": "../Api.Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.6",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.6",
@@ -5094,7 +5110,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC_WIN\\.nuget\\packages\\": {},
+    "C:\\Users\\Andrei\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -5103,14 +5119,14 @@
       "projectUniqueName": "C:\\curso_api_netcore\\src\\Api.Data\\Data.csproj",
       "projectName": "Data",
       "projectPath": "C:\\curso_api_netcore\\src\\Api.Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\PC_WIN\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
       "outputPath": "C:\\curso_api_netcore\\src\\Api.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\PC_WIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5122,7 +5138,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5133,6 +5154,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers",
@@ -5170,7 +5192,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
