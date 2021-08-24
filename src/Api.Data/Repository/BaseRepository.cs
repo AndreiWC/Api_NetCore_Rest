@@ -60,9 +60,37 @@ namespace Api.Data.Repository
             throw new NotImplementedException();
         }
 
-        public Task<T> UpdateAsync(T item)
+
+        /*
+        Recebe uma entidade, procura no banco de dados se existir no banco realiza o update
+        se não encontrar retorna null e não mexe no banco 
+        */
+        public async Task<T> UpdateAsync(T item)
         {
-            throw new NotImplementedException();
+            try
+            {
+                //verifica se existe o registro no banco, se não existe retorna null
+                var result = await _dataset.SingleOrDefaultAsync(p => p.Equals(item.Id));
+                if (result == null)
+                {
+                    return null;
+                }
+                //atualizar a data de alteração do registro
+                item.UpdateAt = DateTime.UtcNow;
+                // mantem a data de criação do registro
+                item.CreateAT = result.CreateAT;
+                //context recebe os valores result e seta nele os valores alterados de item
+                _context.Entry(result).CurrentValues.SetValues(item);
+                //salva no banco, faz o commit ou o rolback no banco
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            // se tudo der certo retorna o item
+            return item;
         }
     }
 }
