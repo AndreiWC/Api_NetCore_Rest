@@ -21,6 +21,7 @@ namespace Api.Data.Mapping
             builder.Property(u => u.Name).IsRequired().HasMaxLength(60);
             // CRIA O CAMPO EMAIL COM TAMANHO MAXIMO DE 100 CARACTERES
             builder.Property(u => u.Email).HasMaxLength(100);
+            
         }
     }
 }
