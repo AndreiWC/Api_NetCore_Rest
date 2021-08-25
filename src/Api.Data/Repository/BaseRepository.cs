@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Api.Data.Repository
 {
-    public class BaseRepository<T> : IRespository<T> where T : BaseEntity
+    public class BaseRepository<T> : IRepository<T> where T : BaseEntity
     {
         /*CONTRUTOR CRIADO PARA RECEBER O CONTEXT POR EJEÇÃO AO INICIAR A APLICAÇÃO*/
         protected readonly MyContext _context;
