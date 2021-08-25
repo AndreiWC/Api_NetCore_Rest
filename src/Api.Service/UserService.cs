@@ -7,7 +7,7 @@ using Api.Domain.Interfaces.Services.User;
 
 namespace Api.Service
 {
-    public class UserService : IUserServices
+    public class UserService : IUserService
     {
         private IRepository<UserEntity> _repository;
         //contrutor recebe por injeção o  IRepository<UserEntity> e seta na variavel private  _repository

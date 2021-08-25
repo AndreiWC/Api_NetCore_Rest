@@ -6,7 +6,7 @@ using Api.Domain.Entities;
 namespace Api.Domain.Interfaces.Services.User
 {
     //Implementa a interface do UserEntity que ira interagir com a camada de application
-    public interface IUserServices
+    public interface IUserService
     {
         Task<UserEntity> Get(Guid Id);
         Task<IEnumerable<UserEntity>> GetAll();
