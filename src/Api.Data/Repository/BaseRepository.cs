@@ -59,6 +59,7 @@ namespace Api.Data.Repository
                 }
                 //passa para o CreateAT a dataatual
                 item.CreateAT = DateTime.UtcNow;
+                _dataset.Add(item);
                 //salva o context no banco de dados
                 await _context.SaveChangesAsync();
             }
