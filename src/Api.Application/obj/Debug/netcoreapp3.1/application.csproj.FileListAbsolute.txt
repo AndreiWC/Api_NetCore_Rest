@@ -61,7 +61,7 @@ C:\curso_api_netcore\src\Api.Application\bin\Debug\netcoreapp3.1\Domain.pdb
 C:\curso_api_netcore\src\Api.Application\bin\Debug\netcoreapp3.1\Service.pdb
 C:\curso_api_netcore\src\Api.Application\bin\Debug\netcoreapp3.1\CrossCutting.pdb
 C:\curso_api_netcore\src\Api.Application\bin\Debug\netcoreapp3.1\Data.pdb
-C:\curso_api_netcore\src\Api.Application\obj\Debug\netcoreapp3.1\scopedcss\bundle\application.styles.css
 C:\curso_api_netcore\src\Api.Application\obj\Debug\netcoreapp3.1\application.csproj.CopyComplete
 C:\curso_api_netcore\src\Api.Application\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\curso_api_netcore\src\Api.Application\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\curso_api_netcore\src\Api.Application\bin\Debug\netcoreapp3.1\Properties\launchSettings.json

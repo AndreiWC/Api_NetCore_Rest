@@ -91,6 +91,58 @@ namespace Api.Application.Controllers
 
         }
 
+        //CRIA O METODO PUT ONDE ELE É RESPONSAVEL PELOS UPDATES DENTRO DO BANCO 
+        [HttpPut]
+        public async Task<ActionResult> Put([FromBody] UserEntity user){
+
+            if (!ModelState.IsValid)// QUANDO MANDA UMA INFORMAÇÃO PARA ROTA ELA PREENCHE  O ModelState, AQUI É VERIFICADO SE A INFORMAÇÃO É VALIDA
+            {
+                return BadRequest(ModelState);//retorna um BadRequest 400 - solicitação invalida
+            }
+
+            try
+            {
+                var result = await _service.Put(user);// ALIMENTA A VARIAVEL COM O RESULTADO DO PUT QUE É UMA  USERENTITY
+
+                if (result != null) // VALIDA SE É DIFERENTE DE NULO, CASO SEJA SIGNIFICA QUE O INSERT FOI BEM SUCEDIDA
+                {
+                    return Ok (result); // CASO SEJA VALIDO RETORNA UM OK E O RESULT
+
+                }else
+                {
+                    return BadRequest(); // CASO O RESULT SEJA NULO RETORNA UM BADREQUEST
+                }
+            }
+            catch (ArgumentException e)
+            {
+                
+                 return StatusCode((int)HttpStatusCode.InternalServerError, e.Message); // CASO CAIA NO TRY RETORNA 500
+            }
+
+        }
+        //CRIA O METODO DELETE ONDE ELE É RESPONSAVEL PELOS DELETES DENTRO DO BANCO, ELE RECEBE POR PARAMETRO UM ID DO TIPO GUID 
+        [HttpDelete ("{Id}")] // 
+        public async Task<ActionResult> Delete (Guid Id){
+            if (!ModelState.IsValid)// QUANDO MANDA UMA INFORMAÇÃO PARA ROTA ELA PREENCHE  O ModelState, AQUI É VERIFICADO SE A INFORMAÇÃO É VALIDA
+            {
+                return BadRequest(ModelState); //retorna um BadRequest 400 - solicitação invalida
+            }
+            
+            try
+            {
+                 return Ok (await _service.Delete(Id));
+
+            }
+            catch (ArgumentException e)
+            {
+                
+                return StatusCode((int)HttpStatusCode.InternalServerError, e.Message); // CASO CAIA NO TRY RETORNA 500
+
+            }
+           
+           
+        }
+
 
 
     }
