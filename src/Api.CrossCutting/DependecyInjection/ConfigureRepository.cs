@@ -5,6 +5,7 @@ using Api.Domain.Interfaces;
 using Api.Domain.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 
 namespace Api.CrossCutting.DependecyInjection
 {
@@ -12,11 +13,13 @@ namespace Api.CrossCutting.DependecyInjection
     {
         public static void ConfigureDependenciesRepository(IServiceCollection serviceColletion)
         {
+            
+
             serviceColletion.AddScoped(typeof(IRepository<>), typeof(BaseRepository<>));
             serviceColletion.AddScoped<IUserRepository, UserImplementation>();
 
             serviceColletion.AddDbContext<MyContext>(
-                options => options.UseMySql("Server=Localhost;Port=3306;Database=dbApi;Uid=root;Pwd=vssql")
+                options => options.UseMySql( "Server=Localhost;Port=3306;Database=dbApi;Uid=root;Pwd=vssql")
             );
         }
     }

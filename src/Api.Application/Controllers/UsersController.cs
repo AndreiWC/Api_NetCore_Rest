@@ -3,11 +3,13 @@ using System.Net;
 using System.Threading.Tasks;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces.Services.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Application.Controllers
 {
     //Aqui cria as rotas das api, equivale ao Http:localhost:5000/api/users
+  
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase //Extende a ControllerBase do pacote Microsoft.AspNetCore.Mvc onde faz o gerenciamento das rotas
@@ -21,6 +23,7 @@ namespace Api.Application.Controllers
         }
         //AQUI INICIA OS METODOS DA API RESTFULL
         //METODO DO TIPO GETALL, RETORNA TODOS OS DADOS 
+        [Authorize("Bearer")]
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
@@ -40,6 +43,7 @@ namespace Api.Application.Controllers
         }
         // 
         //METÓDO DO TIPO GET, RETORNA UM REGISTRO ESPECIFICO, ONDE É RECEBIDO UMA PARAMETRO ID
+        [Authorize("Bearer")]
         [HttpGet]
         [Route("{id}", Name = "GetWithId")] //CONFIGURA A ROTA COM UM PARÂMETRO ID E COM O NOME=GetWithId
         public async Task<ActionResult> Get(Guid id)
@@ -62,6 +66,8 @@ namespace Api.Application.Controllers
 
         }
         // CRIA O METÓDO POST, ONDE É RECEBIDO UMA ENTIDADE FORMATO JASON PARA A INSERÇÃO NO BANOC
+
+        [Authorize("Bearer")]
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] UserEntity user)
         {
@@ -92,6 +98,7 @@ namespace Api.Application.Controllers
         }
 
         //CRIA O METODO PUT ONDE ELE É RESPONSAVEL PELOS UPDATES DENTRO DO BANCO 
+        [Authorize("Bearer")]
         [HttpPut]
         public async Task<ActionResult> Put([FromBody] UserEntity user){
 
@@ -121,6 +128,7 @@ namespace Api.Application.Controllers
 
         }
         //CRIA O METODO DELETE ONDE ELE É RESPONSAVEL PELOS DELETES DENTRO DO BANCO, ELE RECEBE POR PARAMETRO UM ID DO TIPO GUID 
+        [Authorize("Bearer")]
         [HttpDelete ("{Id}")] // 
         public async Task<ActionResult> Delete (Guid Id){
             if (!ModelState.IsValid)// QUANDO MANDA UMA INFORMAÇÃO PARA ROTA ELA PREENCHE  O ModelState, AQUI É VERIFICADO SE A INFORMAÇÃO É VALIDA
