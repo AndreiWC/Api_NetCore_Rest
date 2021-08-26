@@ -12,8 +12,8 @@ namespace Api.Data.Context
         // CONTEXTOFACTORY IRÁ PROVER A CONEXÃO PARA TEMPO DE DESGNER E O USERMAP CONFIGURA A TABELA NO BANCO DE DADOS
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<UserEntity>(new UserMap().Configure);
+            base.OnModelCreating(modelBuilder);            
+            modelBuilder.Entity<UserEntity>(new UserMap().Configure); // MAPEIA A USERENTITY DO BANCO DE DADOS
         }
 
     }
