@@ -2,7 +2,7 @@ using System;
 
 namespace Api.Domain.DTOs.User
 {
-    //Dto para realizar update na UserEntity
+    //Dto para realizar update na UserEntity  é essa dto que ira retornar na api
     public class UserDtoUpdateResult
     {
         public Guid Id { get; set; }

@@ -1,6 +1,7 @@
 using System;
 using System.Net;
 using System.Threading.Tasks;
+using Api.Domain.DTOs.User;
 using Api.Domain.Entities;
 using Api.Domain.Interfaces.Services.User;
 using Microsoft.AspNetCore.Authorization;
@@ -9,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Api.Application.Controllers
 {
     //Aqui cria as rotas das api, equivale ao Http:localhost:5000/api/users
-  
+
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase //Extende a ControllerBase do pacote Microsoft.AspNetCore.Mvc onde faz o gerenciamento das rotas
@@ -69,7 +70,7 @@ namespace Api.Application.Controllers
 
         [Authorize("Bearer")]
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] UserEntity user)
+        public async Task<ActionResult> Post([FromBody] UserDto user)
         {
             if (!ModelState.IsValid) // QUANDO MANDA UMA INFORMAÇÃO PARA ROTA ELA PREENCHE  O ModelState, AQUI É VERIFICADO SE A INFORMAÇÃO É VALIDA
             {
@@ -100,7 +101,8 @@ namespace Api.Application.Controllers
         //CRIA O METODO PUT ONDE ELE É RESPONSAVEL PELOS UPDATES DENTRO DO BANCO 
         [Authorize("Bearer")]
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] UserEntity user){
+        public async Task<ActionResult> Put([FromBody] UserDto user)
+        {
 
             if (!ModelState.IsValid)// QUANDO MANDA UMA INFORMAÇÃO PARA ROTA ELA PREENCHE  O ModelState, AQUI É VERIFICADO SE A INFORMAÇÃO É VALIDA
             {
@@ -113,42 +115,44 @@ namespace Api.Application.Controllers
 
                 if (result != null) // VALIDA SE É DIFERENTE DE NULO, CASO SEJA SIGNIFICA QUE O INSERT FOI BEM SUCEDIDA
                 {
-                    return Ok (result); // CASO SEJA VALIDO RETORNA UM OK E O RESULT
+                    return Ok(result); // CASO SEJA VALIDO RETORNA UM OK E O RESULT
 
-                }else
+                }
+                else
                 {
                     return BadRequest(); // CASO O RESULT SEJA NULO RETORNA UM BADREQUEST
                 }
             }
             catch (ArgumentException e)
             {
-                
-                 return StatusCode((int)HttpStatusCode.InternalServerError, e.Message); // CASO CAIA NO TRY RETORNA 500
+
+                return StatusCode((int)HttpStatusCode.InternalServerError, e.Message); // CASO CAIA NO TRY RETORNA 500
             }
 
         }
         //CRIA O METODO DELETE ONDE ELE É RESPONSAVEL PELOS DELETES DENTRO DO BANCO, ELE RECEBE POR PARAMETRO UM ID DO TIPO GUID 
         [Authorize("Bearer")]
-        [HttpDelete ("{Id}")] // 
-        public async Task<ActionResult> Delete (Guid Id){
+        [HttpDelete("{Id}")] // 
+        public async Task<ActionResult> Delete(Guid Id)
+        {
             if (!ModelState.IsValid)// QUANDO MANDA UMA INFORMAÇÃO PARA ROTA ELA PREENCHE  O ModelState, AQUI É VERIFICADO SE A INFORMAÇÃO É VALIDA
             {
                 return BadRequest(ModelState); //retorna um BadRequest 400 - solicitação invalida
             }
-            
+
             try
             {
-                 return Ok (await _service.Delete(Id));
+                return Ok(await _service.Delete(Id));
 
             }
             catch (ArgumentException e)
             {
-                
+
                 return StatusCode((int)HttpStatusCode.InternalServerError, e.Message); // CASO CAIA NO TRY RETORNA 500
 
             }
-           
-           
+
+
         }
 
 
