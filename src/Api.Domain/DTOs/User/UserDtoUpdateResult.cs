@@ -7,7 +7,7 @@ namespace Api.Domain.DTOs.User
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public string Emai { get; set; }
+        public string Email { get; set; }
         public DateTime UpdateeAt { get; set; }
     }
 }

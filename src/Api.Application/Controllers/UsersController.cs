@@ -66,11 +66,11 @@ namespace Api.Application.Controllers
             }
 
         }
-        // CRIA O METÓDO POST, ONDE É RECEBIDO UMA ENTIDADE FORMATO JASON PARA A INSERÇÃO NO BANOC
+        // CRIA O METÓDO POST, ONDE É RECEBIDO UMA ENTIDADE FORMATO JSON PARA A INSERÇÃO NO BANOC
 
         [Authorize("Bearer")]
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] UserDto user)
+        public async Task<ActionResult> Post([FromBody] UserDtoCreate user)
         {
             if (!ModelState.IsValid) // QUANDO MANDA UMA INFORMAÇÃO PARA ROTA ELA PREENCHE  O ModelState, AQUI É VERIFICADO SE A INFORMAÇÃO É VALIDA
             {
@@ -101,7 +101,7 @@ namespace Api.Application.Controllers
         //CRIA O METODO PUT ONDE ELE É RESPONSAVEL PELOS UPDATES DENTRO DO BANCO 
         [Authorize("Bearer")]
         [HttpPut]
-        public async Task<ActionResult> Put([FromBody] UserDto user)
+        public async Task<ActionResult> Put([FromBody] UserDtoUpdate user)
         {
 
             if (!ModelState.IsValid)// QUANDO MANDA UMA INFORMAÇÃO PARA ROTA ELA PREENCHE  O ModelState, AQUI É VERIFICADO SE A INFORMAÇÃO É VALIDA
