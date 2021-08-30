@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Data.Migrations
 {
-    public partial class UserMigrations : Migration
+    public partial class novamigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -21,6 +21,11 @@ namespace Data.Migrations
                 {
                     table.PrimaryKey("PK_User", x => x.Id);
                 });
+
+            migrationBuilder.InsertData(
+                table: "User",
+                columns: new[] { "Id", "CreateAT", "Email", "Name", "UpdateAt" },
+                values: new object[] { new Guid("17b4de54-7fd7-4a59-9b31-ee9ace525a76"), new DateTime(2021, 8, 30, 11, 16, 13, 384, DateTimeKind.Local).AddTicks(3887), "Admin@gmail.com", "Admin", new DateTime(2021, 8, 30, 11, 16, 13, 383, DateTimeKind.Local).AddTicks(45) });
 
             migrationBuilder.CreateIndex(
                 name: "IX_User_Email",

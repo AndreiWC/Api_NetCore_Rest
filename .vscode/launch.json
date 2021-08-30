@@ -20,7 +20,10 @@
                 "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "DB_CONNECTION":"Server=Localhost;Port=3306;Database=dbApi2;Uid=root;Pwd=vssql",
+                "DATABASE" : "MYSQL",
+                "MIGRATION":"APLICAR"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
