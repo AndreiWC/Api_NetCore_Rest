@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "acclE5s/cddfd+n9r2V4TLrS28DXs8Q8HjK5m/TidAgasURL5Fm7gE9Nv0NHsldPszyYhdrtjktmwEAvESceWQ==",
+  "dgSpecHash": "wq6Jcluhepi47tYZ3db9nf/9Nwb7wOEu3MFqVtpkeyAJEgHMZLyy1dXvWUAHVzWD0fY/OfDTk5prkl3ObSgELg==",
   "success": true,
-  "projectFilePath": "c:\\curso_api_netcore\\src\\Api.Service\\Service.csproj",
+  "projectFilePath": "C:\\curso_api_netcore\\src\\Api.Service\\Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Andrei\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

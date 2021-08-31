@@ -5311,11 +5311,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\curso_api_netcore\\src\\Api.Service\\Service.csproj",
+      "projectUniqueName": "C:\\curso_api_netcore\\src\\Api.Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "c:\\curso_api_netcore\\src\\Api.Service\\Service.csproj",
+      "projectPath": "C:\\curso_api_netcore\\src\\Api.Service\\Service.csproj",
       "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-      "outputPath": "c:\\curso_api_netcore\\src\\Api.Service\\obj\\",
+      "outputPath": "C:\\curso_api_netcore\\src\\Api.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5335,11 +5335,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "c:\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
-              "projectPath": "c:\\curso_api_netcore\\src\\Api.Data\\Data.csproj"
+            "C:\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
+              "projectPath": "C:\\curso_api_netcore\\src\\Api.Data\\Data.csproj"
             },
-            "c:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "c:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
+            "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
             }
           }
         }

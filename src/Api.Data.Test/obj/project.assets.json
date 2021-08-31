@@ -7964,11 +7964,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\curso_api_netcore\\src\\Api.Data.Test\\Api.Data.Test.csproj",
+      "projectUniqueName": "C:\\curso_api_netcore\\src\\Api.Data.Test\\Api.Data.Test.csproj",
       "projectName": "Api.Data.Test",
-      "projectPath": "c:\\curso_api_netcore\\src\\Api.Data.Test\\Api.Data.Test.csproj",
+      "projectPath": "C:\\curso_api_netcore\\src\\Api.Data.Test\\Api.Data.Test.csproj",
       "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-      "outputPath": "c:\\curso_api_netcore\\src\\Api.Data.Test\\obj\\",
+      "outputPath": "C:\\curso_api_netcore\\src\\Api.Data.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7988,14 +7988,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "c:\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj": {
-              "projectPath": "c:\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj"
+            "C:\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+              "projectPath": "C:\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj"
             },
-            "c:\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
-              "projectPath": "c:\\curso_api_netcore\\src\\Api.Data\\Data.csproj"
+            "C:\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
+              "projectPath": "C:\\curso_api_netcore\\src\\Api.Data\\Data.csproj"
             },
-            "c:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "c:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
+            "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
             }
           }
         }
