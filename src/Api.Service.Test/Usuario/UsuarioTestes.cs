@@ -14,13 +14,13 @@ namespace Api.Service.Test.Usuario
         public static Guid IdUsuario { get; set; }
 
         public List<UserDto> listaDtoUser = new List<UserDto>();
-        public UserDto userDto  ;
-        public UserDtoCreate userDtoCreate ;
-        public UserDtoCreateResult userDtoCreateResult  ;
+        public UserDto userDto;
+        public UserDtoCreate userDtoCreate;
+        public UserDtoCreateResult userDtoCreateResult;
 
-        
-        public UserDtoUpdate UserDtoUpdate  ;
-        public UserDtoUpdateResult UserDtoUpdateResult  ;
+
+        public UserDtoUpdate UserDtoUpdate;
+        public UserDtoUpdateResult UserDtoUpdateResult;
 
 
         public UsuarioTestes()
@@ -52,9 +52,9 @@ namespace Api.Service.Test.Usuario
                     Email = EmailUsuario
                 };
 
-                 userDtoCreate = new UserDtoCreate
+                userDtoCreate = new UserDtoCreate
                 {
-                     
+
                     Name = NomeUsuario,
                     Email = EmailUsuario
                 };
@@ -65,7 +65,7 @@ namespace Api.Service.Test.Usuario
                     Name = NomeUsuario,
                     Email = EmailUsuario,
                     CreateAt = DateTime.UtcNow
-                   
+
                 };
 
                 UserDtoUpdate = new UserDtoUpdate
@@ -80,7 +80,7 @@ namespace Api.Service.Test.Usuario
                     Id = IdUsuario,
                     Name = NomeUsuarioAlterado,
                     Email = EmailUsuarioAlterado,
-                    UpdateeAt = DateTime.UtcNow
+                    UpdateAt = DateTime.UtcNow
                 };
 
 

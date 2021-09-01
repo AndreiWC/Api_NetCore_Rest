@@ -20,7 +20,7 @@ namespace Api.Service.Test
             public IMapper GetMapper()
             {
 
-                var config = new AutoMapper.MapperConfiguration(cfg =>
+                var config = new MapperConfiguration(cfg =>
                 {
                     cfg.AddProfile(new DtoToModelProfile());
                     cfg.AddProfile(new EntityToDtoProfile());
