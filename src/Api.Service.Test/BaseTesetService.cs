@@ -9,25 +9,26 @@ namespace Api.Service.Test
     {
 
         public IMapper Mapper { get; set; }
-     
-        public  BaseTesetService()
+
+        public BaseTesetService()
         {
-                Mapper = new AutoMapperFixture().GetMapper();
+            Mapper = new AutoMapperFixture().GetMapper();
         }
 
         public class AutoMapperFixture : IDisposable
         {
-            public IMapper GetMapper(){
-            
-            var config = new AutoMapper.MapperConfiguration(cfg =>
+            public IMapper GetMapper()
             {
-                cfg.AddProfile(new DtoToModelProfile());
-                cfg.AddProfile(new EntityToDtoProfile());
-                cfg.AddProfile(new ModelToEntityProfile());
-            });
+
+                var config = new AutoMapper.MapperConfiguration(cfg =>
+                {
+                    cfg.AddProfile(new DtoToModelProfile());
+                    cfg.AddProfile(new EntityToDtoProfile());
+                    cfg.AddProfile(new ModelToEntityProfile());
+                });
                 return config.CreateMapper();
             }
-            public void  Dispose()
+            public void Dispose()
             {
             }
         }
