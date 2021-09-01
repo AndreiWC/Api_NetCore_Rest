@@ -5649,23 +5649,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Andrei\\.nuget\\packages\\": {},
+    "C:\\Users\\PC_WIN\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\curso_api_netcore\\src\\Api.Application\\application.csproj",
+      "projectUniqueName": "c:\\curso_api_netcore\\src\\Api.Application\\application.csproj",
       "projectName": "application",
-      "projectPath": "C:\\curso_api_netcore\\src\\Api.Application\\application.csproj",
-      "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-      "outputPath": "C:\\curso_api_netcore\\src\\Api.Application\\obj\\",
+      "projectPath": "c:\\curso_api_netcore\\src\\Api.Application\\application.csproj",
+      "packagesPath": "C:\\Users\\PC_WIN\\.nuget\\packages\\",
+      "outputPath": "c:\\curso_api_netcore\\src\\Api.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC_WIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5677,16 +5677,15 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj": {
-              "projectPath": "C:\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj"
+            "c:\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+              "projectPath": "c:\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj"
             },
-            "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
+            "c:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "c:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
             },
-            "C:\\curso_api_netcore\\src\\Api.Service\\Service.csproj": {
-              "projectPath": "C:\\curso_api_netcore\\src\\Api.Service\\Service.csproj"
+            "c:\\curso_api_netcore\\src\\Api.Service\\Service.csproj": {
+              "projectPath": "c:\\curso_api_netcore\\src\\Api.Service\\Service.csproj"
             }
           }
         }
@@ -5699,7 +5698,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -5728,7 +5726,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
       }
     }
   }
