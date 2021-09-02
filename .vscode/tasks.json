@@ -48,12 +48,21 @@
             ]
         },
          {
-            "label": "Data.Services",
+            "label": "Services.Testes",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "test",
                 "${workspaceFolder}/src/Api.Service.Test/Api.Service.Test.csproj",
+            ]
+        },
+         {
+            "label": "Application.Testes",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/src/Api.Application.Test/Api.Application.Test.csproj",
             ]
         }
     ]
