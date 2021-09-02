@@ -8552,7 +8552,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC_WIN\\.nuget\\packages\\": {},
+    "C:\\Users\\Andrei\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -8561,14 +8561,14 @@
       "projectUniqueName": "C:\\curso_api_netcore\\src\\Api.Application.Test\\Api.Application.Test.csproj",
       "projectName": "Api.Application.Test",
       "projectPath": "C:\\curso_api_netcore\\src\\Api.Application.Test\\Api.Application.Test.csproj",
-      "packagesPath": "C:\\Users\\PC_WIN\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
       "outputPath": "C:\\curso_api_netcore\\src\\Api.Application.Test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\PC_WIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andrei\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8580,6 +8580,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
             "C:\\curso_api_netcore\\src\\Api.Application\\application.csproj": {
               "projectPath": "C:\\curso_api_netcore\\src\\Api.Application\\application.csproj"
@@ -8601,6 +8602,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Faker.NETCore": {
             "target": "Package",
@@ -8642,7 +8644,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
