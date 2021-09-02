@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using Api.Application.Controllers;
-using Api.Domain.Dtos.User;
+using Api.Domain.DTOs.User;
 using Api.Domain.Interfaces.Services.User;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
