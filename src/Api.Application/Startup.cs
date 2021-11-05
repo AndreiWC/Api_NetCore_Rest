@@ -136,7 +136,7 @@ namespace application
                 });
             });
 
-            
+
 
         }
 
@@ -162,19 +162,21 @@ namespace application
             app.UseFastReport();//Add para trabalhar com o fastReport
             app.UseStaticFiles(); //Add para trabalhar com relatorios
 
-     
+
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
             //verificação para realizar as migrations caso não exista o banco 
-            if (Environment.GetEnvironmentVariable("MIGRATION").ToLower() == "APLICAR".ToLower()){
+            if (Environment.GetEnvironmentVariable("MIGRATION").ToLower() == "APLICAR".ToLower())
+            {
 
-                using( var service = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
+                using (var service = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>()
                                                     .CreateScope())
                 {
-                    using (var context = service.ServiceProvider.GetService<MyContext>()){
+                    using (var context = service.ServiceProvider.GetService<MyContext>())
+                    {
                         context.Database.Migrate();
                     }
 
