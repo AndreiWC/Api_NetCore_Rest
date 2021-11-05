@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\curso_api_netcore\\src\\Api.Application\\application.csproj": {}
+    "d:\\Api_NetCore_Rest\\src\\Api.Application\\application.csproj": {}
   },
   "projects": {
-    "C:\\curso_api_netcore\\src\\Api.Application\\application.csproj": {
+    "d:\\Api_NetCore_Rest\\src\\Api.Application\\application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\curso_api_netcore\\src\\Api.Application\\application.csproj",
+        "projectUniqueName": "d:\\Api_NetCore_Rest\\src\\Api.Application\\application.csproj",
         "projectName": "application",
-        "projectPath": "C:\\curso_api_netcore\\src\\Api.Application\\application.csproj",
+        "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Application\\application.csproj",
         "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "C:\\curso_api_netcore\\src\\Api.Application\\obj\\",
+        "outputPath": "d:\\Api_NetCore_Rest\\src\\Api.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,14 +31,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj": {
-                "projectPath": "C:\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj"
+              "d:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj"
               },
-              "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
+              "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
               },
-              "C:\\curso_api_netcore\\src\\Api.Service\\Service.csproj": {
-                "projectPath": "C:\\curso_api_netcore\\src\\Api.Service\\Service.csproj"
+              "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj": {
+                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj"
               }
             }
           }
@@ -53,6 +53,22 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "FastReport.OpenSource": {
+              "target": "Package",
+              "version": "[2021.4.13, )"
+            },
+            "FastReport.OpenSource.Data.MsSql": {
+              "target": "Package",
+              "version": "[2021.4.0, )"
+            },
+            "FastReport.OpenSource.Export.PdfSimple": {
+              "target": "Package",
+              "version": "[2021.4.13, )"
+            },
+            "FastReport.OpenSource.Web": {
+              "target": "Package",
+              "version": "[2021.4.13, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.1.6, )"
@@ -84,14 +100,14 @@
         }
       }
     },
-    "C:\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+    "d:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj",
+        "projectUniqueName": "d:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj",
         "projectName": "CrossCutting",
-        "projectPath": "C:\\curso_api_netcore\\src\\Api.CrossCutting\\CrossCutting.csproj",
+        "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj",
         "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "C:\\curso_api_netcore\\src\\Api.CrossCutting\\obj\\",
+        "outputPath": "d:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -111,14 +127,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
-                "projectPath": "C:\\curso_api_netcore\\src\\Api.Data\\Data.csproj"
+              "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj": {
+                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj"
               },
-              "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
+              "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
               },
-              "C:\\curso_api_netcore\\src\\Api.Service\\Service.csproj": {
-                "projectPath": "C:\\curso_api_netcore\\src\\Api.Service\\Service.csproj"
+              "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj": {
+                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj"
               }
             }
           }
@@ -140,6 +156,22 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[8.1.1, )"
+            },
+            "FastReport.OpenSource": {
+              "target": "Package",
+              "version": "[2021.4.13, )"
+            },
+            "FastReport.OpenSource.Data.MsSql": {
+              "target": "Package",
+              "version": "[2021.4.0, )"
+            },
+            "FastReport.OpenSource.Export.PdfSimple": {
+              "target": "Package",
+              "version": "[2021.4.13, )"
+            },
+            "FastReport.OpenSource.Web": {
+              "target": "Package",
+              "version": "[2021.4.13, )"
             }
           },
           "imports": [
@@ -161,14 +193,14 @@
         }
       }
     },
-    "C:\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
+    "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\curso_api_netcore\\src\\Api.Data\\Data.csproj",
+        "projectUniqueName": "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\curso_api_netcore\\src\\Api.Data\\Data.csproj",
+        "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj",
         "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "C:\\curso_api_netcore\\src\\Api.Data\\obj\\",
+        "outputPath": "d:\\Api_NetCore_Rest\\src\\Api.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -188,8 +220,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
+              "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
               }
             }
           }
@@ -244,14 +276,14 @@
         }
       }
     },
-    "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
+    "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj",
+        "projectUniqueName": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj",
+        "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "C:\\curso_api_netcore\\src\\Api.Domain\\obj\\",
+        "outputPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -307,14 +339,14 @@
         }
       }
     },
-    "C:\\curso_api_netcore\\src\\Api.Service\\Service.csproj": {
+    "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\curso_api_netcore\\src\\Api.Service\\Service.csproj",
+        "projectUniqueName": "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\curso_api_netcore\\src\\Api.Service\\Service.csproj",
+        "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj",
         "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "C:\\curso_api_netcore\\src\\Api.Service\\obj\\",
+        "outputPath": "d:\\Api_NetCore_Rest\\src\\Api.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -334,11 +366,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\curso_api_netcore\\src\\Api.Data\\Data.csproj": {
-                "projectPath": "C:\\curso_api_netcore\\src\\Api.Data\\Data.csproj"
+              "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj": {
+                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj"
               },
-              "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj"
+              "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
               }
             }
           }

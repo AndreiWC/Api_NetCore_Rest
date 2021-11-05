@@ -135,6 +135,9 @@ namespace application
                     }
                 });
             });
+
+            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -155,6 +158,11 @@ namespace application
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseFastReport();//Add para trabalhar com o fastReport
+            app.UseStaticFiles(); //Add para trabalhar com relatorios
+
+     
 
             app.UseEndpoints(endpoints =>
             {

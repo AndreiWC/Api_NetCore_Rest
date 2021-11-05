@@ -6,6 +6,7 @@ using Api.Domain.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using ApiFastReport.Data;
 using System;
 
 namespace Api.CrossCutting.DependecyInjection
@@ -20,6 +21,10 @@ namespace Api.CrossCutting.DependecyInjection
             serviceColletion.AddScoped<IUserRepository, UserImplementation>();
             //TRATAMENTO FEITO PARA VERIFICAR SE A CONEXÃO É DO SQLSERVER OU MYSQL
             // PEGA A CONEXÃO VIA PARAMETRO CONFIGURADO NO LAUNCH.JSON
+
+            // CONFIGURA O FASTREPORT
+            FastReport.Utils.RegisteredObjects.AddConnection(typeof(MySqlDataConnection));
+
             if (Environment.GetEnvironmentVariable("DATABASE").ToLower() == "SQLSERVER".ToLower())
             {
                 serviceColletion.AddDbContext<MyContext>(

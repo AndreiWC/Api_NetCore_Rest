@@ -297,11 +297,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj",
+      "projectUniqueName": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\curso_api_netcore\\src\\Api.Domain\\Domain.csproj",
+      "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-      "outputPath": "C:\\curso_api_netcore\\src\\Api.Domain\\obj\\",
+      "outputPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
