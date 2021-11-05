@@ -157,7 +157,6 @@ D:\Api_NetCore_Rest\src\Api.Application\obj\Debug\netcoreapp3.1\application.dll
 D:\Api_NetCore_Rest\src\Api.Application\obj\Debug\netcoreapp3.1\application.pdb
 D:\Api_NetCore_Rest\src\Api.Application\obj\Debug\netcoreapp3.1\application.genruntimeconfig.cache
 D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\FastReport.dll
-D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\FastReport.Data.MsSql.dll
 D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\FastReport.OpenSource.Export.PdfSimple.dll
 D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\FastReport.OpenSource.Web.dll
 D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
@@ -165,7 +164,6 @@ D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.CodeAn
 D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
 D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
-D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
 D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
 D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
@@ -206,5 +204,5 @@ D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\tr\Microsoft.Cod
 D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\any\lib\netcoreapp3.0\FastReport.Compat.dll
-D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
-D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\FastReport.Data.MySql.dll
+D:\Api_NetCore_Rest\src\Api.Application\bin\Debug\netcoreapp3.1\MySql.Data.dll

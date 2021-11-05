@@ -63,19 +63,19 @@
             },
             "FastReport.OpenSource": {
               "target": "Package",
-              "version": "[2021.4.13, )"
+              "version": "[2021.3.15, )"
             },
-            "FastReport.OpenSource.Data.MsSql": {
+            "FastReport.OpenSource.Data.MySql": {
               "target": "Package",
-              "version": "[2021.4.0, )"
+              "version": "[2021.3.0, )"
             },
             "FastReport.OpenSource.Export.PdfSimple": {
               "target": "Package",
-              "version": "[2021.4.13, )"
+              "version": "[2021.3.15, )"
             },
             "FastReport.OpenSource.Web": {
               "target": "Package",
-              "version": "[2021.4.13, )"
+              "version": "[2021.3.15, )"
             }
           },
           "imports": [

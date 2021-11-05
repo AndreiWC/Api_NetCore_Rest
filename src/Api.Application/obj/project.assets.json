@@ -29,7 +29,7 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "FastReport.Compat/2021.3.0": {
+      "FastReport.Compat/2021.2.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "3.3.1",
@@ -53,10 +53,10 @@
           }
         }
       },
-      "FastReport.OpenSource/2021.4.13": {
+      "FastReport.OpenSource/2021.3.15": {
         "type": "package",
         "dependencies": {
-          "FastReport.Compat": "2021.3.0",
+          "FastReport.Compat": "2021.2.7",
           "System.Drawing.Common": "4.6.1",
           "System.Security.Cryptography.Pkcs": "4.5.2",
           "System.Security.Permissions": "4.4.0",
@@ -75,23 +75,23 @@
           "buildMultiTargeting/FastReport.OpenSource.props": {}
         }
       },
-      "FastReport.OpenSource.Data.MsSql/2021.4.0": {
+      "FastReport.OpenSource.Data.MySql/2021.3.0": {
         "type": "package",
         "dependencies": {
-          "FastReport.OpenSource": "2021.4.0",
-          "System.Data.SqlClient": "4.4.3"
+          "FastReport.OpenSource": "2021.3.0",
+          "MySql.Data": "6.10.6"
         },
         "compile": {
-          "lib/netstandard2.0/FastReport.Data.MsSql.dll": {}
+          "lib/netstandard2.0/FastReport.Data.MySql.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/FastReport.Data.MsSql.dll": {}
+          "lib/netstandard2.0/FastReport.Data.MySql.dll": {}
         }
       },
-      "FastReport.OpenSource.Export.PdfSimple/2021.4.13": {
+      "FastReport.OpenSource.Export.PdfSimple/2021.3.15": {
         "type": "package",
         "dependencies": {
-          "FastReport.OpenSource": "2021.4.13"
+          "FastReport.OpenSource": "2021.3.6"
         },
         "compile": {
           "lib/netstandard2.0/FastReport.OpenSource.Export.PdfSimple.dll": {}
@@ -100,10 +100,10 @@
           "lib/netstandard2.0/FastReport.OpenSource.Export.PdfSimple.dll": {}
         }
       },
-      "FastReport.OpenSource.Web/2021.4.13": {
+      "FastReport.OpenSource.Web/2021.3.15": {
         "type": "package",
         "dependencies": {
-          "FastReport.OpenSource": "2021.4.13",
+          "FastReport.OpenSource": "2021.3.15",
           "Microsoft.AspNetCore.Html.Abstractions": "2.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.0.2"
         },
@@ -1029,6 +1029,27 @@
           }
         }
       },
+      "MySql.Data/6.10.6": {
+        "type": "package",
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "4.4.0",
+          "System.Security.Permissions": "4.4.0",
+          "System.Text.Encoding.CodePages": "4.0.1"
+        },
+        "compile": {
+          "lib/netcoreapp2.0/MySql.Data.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/MySql.Data.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "MySqlConnector/0.61.0": {
         "type": "package",
         "compile": {
@@ -1338,35 +1359,10 @@
           "System.Security.Permissions": "4.5.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
-        }
-      },
-      "System.Data.SqlClient/4.4.3": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Win32.Registry": "4.4.0",
-          "System.Security.Principal.Windows": "4.4.0",
-          "System.Text.Encoding.CodePages": "4.4.0",
-          "runtime.native.System.Data.SqlClient.sni": "4.4.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Data.SqlClient.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Data.SqlClient.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -2318,10 +2314,10 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "Data": "1.0.0",
           "Domain": "1.0.0",
-          "FastReport.OpenSource": "2021.4.13",
-          "FastReport.OpenSource.Data.MsSql": "2021.4.0",
-          "FastReport.OpenSource.Export.PdfSimple": "2021.4.13",
-          "FastReport.OpenSource.Web": "2021.4.13",
+          "FastReport.OpenSource": "2021.3.15",
+          "FastReport.OpenSource.Data.MySql": "2021.3.0",
+          "FastReport.OpenSource.Export.PdfSimple": "2021.3.15",
+          "FastReport.OpenSource.Web": "2021.3.15",
           "Service": "1.0.0"
         },
         "compile": {
@@ -2406,10 +2402,10 @@
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
       ]
     },
-    "FastReport.Compat/2021.3.0": {
-      "sha512": "KXswGBLGq+tEeAUXr6OqQ+wae/1BmwD/G/E8GblRp/xjf9d9pZOGg9OqNOb6Fddph0ootqfEhk6k8UI4+YRmUw==",
+    "FastReport.Compat/2021.2.7": {
+      "sha512": "GIWCBqxu8+Cnv6xad8LSCPTYCMDId6HPmUqtYfC1JqCVN4ppzAgWZWcbr5uZf+isyHGTADSlNYBi7RZLMA7a4w==",
       "type": "package",
-      "path": "fastreport.compat/2021.3.0",
+      "path": "fastreport.compat/2021.2.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2417,7 +2413,7 @@
         "build/netcoreapp3.0/FastReport.Compat.targets",
         "build/netcoreapp3.0/lib/Any/FastReport.Compat.dll",
         "build/netcoreapp3.0/lib/Win/FastReport.Compat.dll",
-        "fastreport.compat.2021.3.0.nupkg.sha512",
+        "fastreport.compat.2021.2.7.nupkg.sha512",
         "fastreport.compat.nuspec",
         "frlogo192.png",
         "lib/net40/FastReport.Compat.dll",
@@ -2428,10 +2424,10 @@
         "runtimes/any/lib/netcoreapp3.0/FastReport.Compat.dll"
       ]
     },
-    "FastReport.OpenSource/2021.4.13": {
-      "sha512": "IzZicQrbjwck3WmrvoanXKABlL2jKlr2vA298BfNq+gbl/8lOZRvfiWUTqmWgrTZ+ZcfNhD+7Z+j2LzotRj1xg==",
+    "FastReport.OpenSource/2021.3.15": {
+      "sha512": "6VE4J3zXMuPyDTe7cJsFpum4LEU4xV+sLPCMW2HjOhwqhqqz7m4LLfXUSoH99xPHBG82bitPeZL01pTGgta6xA==",
       "type": "package",
-      "path": "fastreport.opensource/2021.4.13",
+      "path": "fastreport.opensource/2021.3.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2439,7 +2435,7 @@
         "build/FastReport.OpenSource.props",
         "buildMultiTargeting/FastReport.OpenSource.props",
         "buildTransitive/FastReport.OpenSource.props",
-        "fastreport.opensource.2021.4.13.nupkg.sha512",
+        "fastreport.opensource.2021.3.15.nupkg.sha512",
         "fastreport.opensource.nuspec",
         "frlogo192.png",
         "lib/net40/FastReport.dll",
@@ -2450,41 +2446,41 @@
         "lib/netstandard2.1/FastReport.xml"
       ]
     },
-    "FastReport.OpenSource.Data.MsSql/2021.4.0": {
-      "sha512": "m2L9FcuHr+cb9pahVJorWhYok+nWxssW8Wq6kiSC3RDB97i+EE4eA+naBHc5Y+t6oVXqMNRgfzt3tGEiyFdTJQ==",
+    "FastReport.OpenSource.Data.MySql/2021.3.0": {
+      "sha512": "tGDjO0yn/xep0UzfwODxqzR4WvsRYq/YHcZZXikXBirQ6bWse7Xnyve0grSHTzMHZnuQnhWDU3ca/mwqdF3gkg==",
       "type": "package",
-      "path": "fastreport.opensource.data.mssql/2021.4.0",
+      "path": "fastreport.opensource.data.mysql/2021.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fastreport.opensource.data.mssql.2021.4.0.nupkg.sha512",
-        "fastreport.opensource.data.mssql.nuspec",
-        "lib/net452/FastReport.Data.MsSql.dll",
-        "lib/netstandard2.0/FastReport.Data.MsSql.dll"
+        "fastreport.opensource.data.mysql.2021.3.0.nupkg.sha512",
+        "fastreport.opensource.data.mysql.nuspec",
+        "lib/net452/FastReport.Data.MySql.dll",
+        "lib/netstandard2.0/FastReport.Data.MySql.dll"
       ]
     },
-    "FastReport.OpenSource.Export.PdfSimple/2021.4.13": {
-      "sha512": "D+W4y5R9UbVTZl9pVIkx8oSa3KYxZNnGncJIw4cIoGu94szY5htsgjehYRNe3Bt4kfPXYZQtU3k5XLUhr0LKHw==",
+    "FastReport.OpenSource.Export.PdfSimple/2021.3.15": {
+      "sha512": "tIKkfdkLdhr1AJ9HcHmsm8OiEpb+nCzuxdmZcjZbg3y85rBl89mcsy4/6qgKRwd3eLVoMu7YhoyK8wwCeDoydg==",
       "type": "package",
-      "path": "fastreport.opensource.export.pdfsimple/2021.4.13",
+      "path": "fastreport.opensource.export.pdfsimple/2021.3.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fastreport.opensource.export.pdfsimple.2021.4.13.nupkg.sha512",
+        "fastreport.opensource.export.pdfsimple.2021.3.15.nupkg.sha512",
         "fastreport.opensource.export.pdfsimple.nuspec",
         "lib/net40/FastReport.OpenSource.Export.PdfSimple.dll",
         "lib/netstandard2.0/FastReport.OpenSource.Export.PdfSimple.dll"
       ]
     },
-    "FastReport.OpenSource.Web/2021.4.13": {
-      "sha512": "cttclpIsh39350CBNDH2ysVEs5fyGKo/waGmuZ0IBkuWffY+Y0A/TKBd5n/TlUJRxpQMC+xiBZWWfayU/1VFAg==",
+    "FastReport.OpenSource.Web/2021.3.15": {
+      "sha512": "3Dt+H7x0F88siLBm8Fo2c8oqbqVSSqoF0cl5zy+4tdi+1YZm7wsTTNJq9wrQRMAoBXU+IIrNEf7+ykMEOyYgzw==",
       "type": "package",
-      "path": "fastreport.opensource.web/2021.4.13",
+      "path": "fastreport.opensource.web/2021.3.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "FastReport MIT license.md",
-        "fastreport.opensource.web.2021.4.13.nupkg.sha512",
+        "fastreport.opensource.web.2021.3.15.nupkg.sha512",
         "fastreport.opensource.web.nuspec",
         "frlogo192.png",
         "lib/netstandard2.0/FastReport.OpenSource.Web.dll",
@@ -3658,6 +3654,90 @@
         "version.txt"
       ]
     },
+    "MySql.Data/6.10.6": {
+      "sha512": "dcod4CxVkrRANjfVWS7um5HTyLFJhyBGp5hVSdmrhhZZiP9cX3ZNfoZ0W88f6lDWExJuILsAIbctZirQ9mpjQQ==",
+      "type": "package",
+      "path": "mysql.data/6.10.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/app.config.transform",
+        "content/docs/MySqlCommand.xml",
+        "content/docs/MySqlCommandBuilder.xml",
+        "content/docs/MySqlConnection.xml",
+        "content/docs/MySqlConnectionStringBuilder.xml",
+        "content/docs/MySqlDataAdapter.xml",
+        "content/docs/MySqlDataReader.xml",
+        "content/docs/MySqlException.xml",
+        "content/docs/MySqlHelper.xml",
+        "content/docs/MySqlParameter.xml",
+        "content/docs/MySqlParameterCollection.xml",
+        "content/docs/MySqlTransaction.xml",
+        "content/web.config.transform",
+        "contentFiles/any/net452/app.config.transform",
+        "contentFiles/any/net452/docs/MySqlCommand.xml",
+        "contentFiles/any/net452/docs/MySqlCommandBuilder.xml",
+        "contentFiles/any/net452/docs/MySqlConnection.xml",
+        "contentFiles/any/net452/docs/MySqlConnectionStringBuilder.xml",
+        "contentFiles/any/net452/docs/MySqlDataAdapter.xml",
+        "contentFiles/any/net452/docs/MySqlDataReader.xml",
+        "contentFiles/any/net452/docs/MySqlException.xml",
+        "contentFiles/any/net452/docs/MySqlHelper.xml",
+        "contentFiles/any/net452/docs/MySqlParameter.xml",
+        "contentFiles/any/net452/docs/MySqlParameterCollection.xml",
+        "contentFiles/any/net452/docs/MySqlTransaction.xml",
+        "contentFiles/any/net452/web.config.transform",
+        "contentFiles/any/netcoreapp2.0/app.config.transform",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlCommand.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlCommandBuilder.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlConnection.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlConnectionStringBuilder.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlDataAdapter.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlDataReader.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlException.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlHelper.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlParameter.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlParameterCollection.xml",
+        "contentFiles/any/netcoreapp2.0/docs/MySqlTransaction.xml",
+        "contentFiles/any/netcoreapp2.0/web.config.transform",
+        "contentFiles/any/netstandard1.3/app.config.transform",
+        "contentFiles/any/netstandard1.3/docs/MySqlCommand.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlCommandBuilder.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlConnection.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlConnectionStringBuilder.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlDataAdapter.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlDataReader.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlException.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlHelper.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlParameter.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlParameterCollection.xml",
+        "contentFiles/any/netstandard1.3/docs/MySqlTransaction.xml",
+        "contentFiles/any/netstandard1.3/web.config.transform",
+        "contentFiles/any/netstandard2.0/app.config.transform",
+        "contentFiles/any/netstandard2.0/docs/MySqlCommand.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlCommandBuilder.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlConnection.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlConnectionStringBuilder.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlDataAdapter.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlDataReader.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlException.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlHelper.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlParameter.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlParameterCollection.xml",
+        "contentFiles/any/netstandard2.0/docs/MySqlTransaction.xml",
+        "contentFiles/any/netstandard2.0/web.config.transform",
+        "lib/net452/MySql.Data.dll",
+        "lib/net452/MySql.Data.xml",
+        "lib/netcoreapp2.0/MySql.Data.dll",
+        "lib/netcoreapp2.0/MySql.Data.xml",
+        "lib/netstandard1.3/MySql.Data.dll",
+        "lib/netstandard1.3/MySql.Data.xml",
+        "lib/netstandard2.0/MySql.Data.dll",
+        "lib/netstandard2.0/MySql.Data.xml",
+        "mysql.data.6.10.6.nupkg.sha512",
+        "mysql.data.nuspec"
+      ]
+    },
     "MySqlConnector/0.61.0": {
       "sha512": "E01yibVzCkVOmhNsUb+B4amjQKfKFlGiR1huNd6Q8aTCqBrACo0I3JMKvJBMpZfYhAsR8bqB9496PwcGpr+LuQ==",
       "type": "package",
@@ -4454,74 +4534,6 @@
         "ref/netstandard2.0/System.Configuration.ConfigurationManager.xml",
         "system.configuration.configurationmanager.4.5.0.nupkg.sha512",
         "system.configuration.configurationmanager.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Data.SqlClient/4.4.3": {
-      "sha512": "D1hEOS1oPLJ6WcGCzpTWe8SauWVxnDoDTUWhv5XCNdRm/QeSUk4BQ3ZDe7BH+zNVHDBkPYjVzpVjnCl43eOSGg==",
-      "type": "package",
-      "path": "system.data.sqlclient/4.4.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net451/System.Data.SqlClient.dll",
-        "lib/net46/System.Data.SqlClient.dll",
-        "lib/net461/System.Data.SqlClient.dll",
-        "lib/netstandard1.2/System.Data.SqlClient.dll",
-        "lib/netstandard1.3/System.Data.SqlClient.dll",
-        "lib/netstandard2.0/System.Data.SqlClient.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net451/System.Data.SqlClient.dll",
-        "ref/net46/System.Data.SqlClient.dll",
-        "ref/net461/System.Data.SqlClient.dll",
-        "ref/net461/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/System.Data.SqlClient.dll",
-        "ref/netstandard1.2/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/de/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/es/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/fr/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/it/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/ja/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/ko/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/ru/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/zh-hans/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/zh-hant/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/System.Data.SqlClient.dll",
-        "ref/netstandard1.3/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/de/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/es/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/fr/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/it/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/ja/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/ko/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/ru/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/zh-hans/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/zh-hant/System.Data.SqlClient.xml",
-        "ref/netstandard2.0/System.Data.SqlClient.dll",
-        "ref/netstandard2.0/System.Data.SqlClient.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/unix/lib/netstandard1.3/System.Data.SqlClient.dll",
-        "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net451/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net46/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net461/System.Data.SqlClient.dll",
-        "runtimes/win/lib/netstandard1.3/System.Data.SqlClient.dll",
-        "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll",
-        "system.data.sqlclient.4.4.3.nupkg.sha512",
-        "system.data.sqlclient.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -7596,10 +7608,10 @@
     ".NETCoreApp,Version=v3.1": [
       "CrossCutting >= 1.0.0",
       "Domain >= 1.0.0",
-      "FastReport.OpenSource >= 2021.4.13",
-      "FastReport.OpenSource.Data.MsSql >= 2021.4.0",
-      "FastReport.OpenSource.Export.PdfSimple >= 2021.4.13",
-      "FastReport.OpenSource.Web >= 2021.4.13",
+      "FastReport.OpenSource >= 2021.3.15",
+      "FastReport.OpenSource.Data.MySql >= 2021.3.0",
+      "FastReport.OpenSource.Export.PdfSimple >= 2021.3.15",
+      "FastReport.OpenSource.Web >= 2021.3.15",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.6",
       "Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.1.5"
@@ -7612,11 +7624,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Api_NetCore_Rest\\src\\Api.Application\\application.csproj",
+      "projectUniqueName": "D:\\Api_NetCore_Rest\\src\\Api.Application\\application.csproj",
       "projectName": "application",
-      "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Application\\application.csproj",
+      "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Application\\application.csproj",
       "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-      "outputPath": "d:\\Api_NetCore_Rest\\src\\Api.Application\\obj\\",
+      "outputPath": "D:\\Api_NetCore_Rest\\src\\Api.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7636,14 +7648,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "d:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj": {
-              "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj"
+            "D:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+              "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj"
             },
-            "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
+            "D:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
             },
-            "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj": {
-              "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj"
+            "D:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj": {
+              "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj"
             }
           }
         }
@@ -7660,19 +7672,19 @@
         "dependencies": {
           "FastReport.OpenSource": {
             "target": "Package",
-            "version": "[2021.4.13, )"
+            "version": "[2021.3.15, )"
           },
-          "FastReport.OpenSource.Data.MsSql": {
+          "FastReport.OpenSource.Data.MySql": {
             "target": "Package",
-            "version": "[2021.4.0, )"
+            "version": "[2021.3.0, )"
           },
           "FastReport.OpenSource.Export.PdfSimple": {
             "target": "Package",
-            "version": "[2021.4.13, )"
+            "version": "[2021.3.15, )"
           },
           "FastReport.OpenSource.Web": {
             "target": "Package",
-            "version": "[2021.4.13, )"
+            "version": "[2021.3.15, )"
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",

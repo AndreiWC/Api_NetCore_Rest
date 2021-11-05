@@ -5307,11 +5307,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj",
+      "projectUniqueName": "D:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj",
+      "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj",
       "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-      "outputPath": "d:\\Api_NetCore_Rest\\src\\Api.Data\\obj\\",
+      "outputPath": "D:\\Api_NetCore_Rest\\src\\Api.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5331,8 +5331,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
-              "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
+            "D:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
+              "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
             }
           }
         }

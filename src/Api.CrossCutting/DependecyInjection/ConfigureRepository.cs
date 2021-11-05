@@ -6,7 +6,7 @@ using Api.Domain.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
-using ApiFastReport.Data;
+using FastReport.Data;
 using System;
 
 namespace Api.CrossCutting.DependecyInjection

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ONO3fPVLrlg65TnbzhXi1HdKGi6fzxI83+5cNVNyF5Imcb/0PqN3Ig0kt95bPUc/ylpXyNptlIsAl0J54AOMhQ==",
+  "dgSpecHash": "zzbmpm4EAgH6PdaS/XmBywNqQttnHyA2Stgm3qIc1Bmlus4/qxhQTr0LH4zXGJSUfl/1QJU9wOFlBKKarCqNqQ==",
   "success": true,
   "projectFilePath": "d:\\Api_NetCore_Rest\\src\\Api.Application.Test\\Api.Application.Test.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\Andrei\\.nuget\\packages\\fastreport.compat\\2021.3.0\\fastreport.compat.2021.3.0.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\fastreport.opensource\\2021.4.13\\fastreport.opensource.2021.4.13.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\fastreport.opensource.data.mssql\\2021.4.0\\fastreport.opensource.data.mssql.2021.4.0.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\fastreport.opensource.data.mysql\\2021.3.0\\fastreport.opensource.data.mysql.2021.3.0.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\fastreport.opensource.export.pdfsimple\\2021.4.13\\fastreport.opensource.export.pdfsimple.2021.4.13.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\fastreport.opensource.web\\2021.4.13\\fastreport.opensource.web.2021.4.13.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.0.1\\microsoft.aspnetcore.authentication.abstractions.2.0.1.nupkg.sha512",
@@ -80,6 +81,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\microsoft.win32.systemevents\\4.6.0\\microsoft.win32.systemevents.4.6.0.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\moq\\4.14.5\\moq.4.14.5.nupkg.sha512",
+    "C:\\Users\\Andrei\\.nuget\\packages\\mysql.data\\6.10.6\\mysql.data.6.10.6.nupkg.sha512",
     "C:\\Users\\Andrei\\.nuget\\packages\\mysqlconnector\\0.61.0\\mysqlconnector.0.61.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",

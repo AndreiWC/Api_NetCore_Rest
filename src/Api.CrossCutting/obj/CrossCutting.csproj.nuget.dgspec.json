@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj": {}
+    "D:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj": {}
   },
   "projects": {
-    "d:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj": {
+    "D:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj",
+        "projectUniqueName": "D:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj",
         "projectName": "CrossCutting",
-        "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj",
+        "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\CrossCutting.csproj",
         "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "d:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\obj\\",
+        "outputPath": "D:\\Api_NetCore_Rest\\src\\Api.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,14 +31,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj": {
-                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj"
+              "D:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj": {
+                "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj"
               },
-              "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
+              "D:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
               },
-              "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj": {
-                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj"
+              "D:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj": {
+                "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj"
               }
             }
           }
@@ -63,19 +63,19 @@
             },
             "FastReport.OpenSource": {
               "target": "Package",
-              "version": "[2021.4.13, )"
+              "version": "[2021.3.15, )"
             },
-            "FastReport.OpenSource.Data.MsSql": {
+            "FastReport.OpenSource.Data.MySql": {
               "target": "Package",
-              "version": "[2021.4.0, )"
+              "version": "[2021.3.0, )"
             },
             "FastReport.OpenSource.Export.PdfSimple": {
               "target": "Package",
-              "version": "[2021.4.13, )"
+              "version": "[2021.3.15, )"
             },
             "FastReport.OpenSource.Web": {
               "target": "Package",
-              "version": "[2021.4.13, )"
+              "version": "[2021.3.15, )"
             }
           },
           "imports": [
@@ -97,14 +97,14 @@
         }
       }
     },
-    "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj": {
+    "D:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj",
+        "projectUniqueName": "D:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj",
+        "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj",
         "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "d:\\Api_NetCore_Rest\\src\\Api.Data\\obj\\",
+        "outputPath": "D:\\Api_NetCore_Rest\\src\\Api.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -124,8 +124,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
+              "D:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
               }
             }
           }
@@ -180,14 +180,14 @@
         }
       }
     },
-    "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
+    "D:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj",
+        "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\obj\\",
+        "outputPath": "D:\\Api_NetCore_Rest\\src\\Api.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -243,14 +243,14 @@
         }
       }
     },
-    "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj": {
+    "D:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj",
+        "projectUniqueName": "D:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj",
+        "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Service\\Service.csproj",
         "packagesPath": "C:\\Users\\Andrei\\.nuget\\packages\\",
-        "outputPath": "d:\\Api_NetCore_Rest\\src\\Api.Service\\obj\\",
+        "outputPath": "D:\\Api_NetCore_Rest\\src\\Api.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -270,11 +270,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj": {
-                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj"
+              "D:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj": {
+                "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Data\\Data.csproj"
               },
-              "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
-                "projectPath": "d:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
+              "D:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj": {
+                "projectPath": "D:\\Api_NetCore_Rest\\src\\Api.Domain\\Domain.csproj"
               }
             }
           }
