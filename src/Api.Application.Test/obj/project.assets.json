@@ -73,7 +73,7 @@
           }
         }
       },
-      "FastReport.Compat/2021.3.0": {
+      "FastReport.Compat/2021.2.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp": "3.3.1",
@@ -97,10 +97,10 @@
           }
         }
       },
-      "FastReport.OpenSource/2021.4.13": {
+      "FastReport.OpenSource/2021.3.15": {
         "type": "package",
         "dependencies": {
-          "FastReport.Compat": "2021.3.0",
+          "FastReport.Compat": "2021.2.7",
           "System.Drawing.Common": "4.6.1",
           "System.Security.Cryptography.Pkcs": "4.5.2",
           "System.Security.Permissions": "4.4.0",
@@ -119,19 +119,6 @@
           "buildMultiTargeting/FastReport.OpenSource.props": {}
         }
       },
-      "FastReport.OpenSource.Data.MsSql/2021.4.0": {
-        "type": "package",
-        "dependencies": {
-          "FastReport.OpenSource": "2021.4.0",
-          "System.Data.SqlClient": "4.4.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/FastReport.Data.MsSql.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/FastReport.Data.MsSql.dll": {}
-        }
-      },
       "FastReport.OpenSource.Data.MySql/2021.3.0": {
         "type": "package",
         "dependencies": {
@@ -145,10 +132,10 @@
           "lib/netstandard2.0/FastReport.Data.MySql.dll": {}
         }
       },
-      "FastReport.OpenSource.Export.PdfSimple/2021.4.13": {
+      "FastReport.OpenSource.Export.PdfSimple/2021.3.15": {
         "type": "package",
         "dependencies": {
-          "FastReport.OpenSource": "2021.4.13"
+          "FastReport.OpenSource": "2021.3.6"
         },
         "compile": {
           "lib/netstandard2.0/FastReport.OpenSource.Export.PdfSimple.dll": {}
@@ -157,10 +144,10 @@
           "lib/netstandard2.0/FastReport.OpenSource.Export.PdfSimple.dll": {}
         }
       },
-      "FastReport.OpenSource.Web/2021.4.13": {
+      "FastReport.OpenSource.Web/2021.3.15": {
         "type": "package",
         "dependencies": {
-          "FastReport.OpenSource": "2021.4.13",
+          "FastReport.OpenSource": "2021.3.15",
           "Microsoft.AspNetCore.Html.Abstractions": "2.0.0",
           "Microsoft.AspNetCore.Mvc.Core": "2.0.2"
         },
@@ -1939,31 +1926,6 @@
           "ref/netstandard1.3/System.Console.dll": {}
         }
       },
-      "System.Data.SqlClient/4.4.3": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Win32.Registry": "4.4.0",
-          "System.Security.Principal.Windows": "4.4.0",
-          "System.Text.Encoding.CodePages": "4.4.0",
-          "runtime.native.System.Data.SqlClient.sni": "4.4.0"
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Data.SqlClient.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Data.SqlClient.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll": {
-            "assetType": "runtime",
-            "rid": "unix"
-          },
-          "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
       "System.Diagnostics.Debug/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -3336,10 +3298,10 @@
         "dependencies": {
           "CrossCutting": "1.0.0",
           "Domain": "1.0.0",
-          "FastReport.OpenSource": "2021.4.13",
-          "FastReport.OpenSource.Data.MsSql": "2021.4.0",
-          "FastReport.OpenSource.Export.PdfSimple": "2021.4.13",
-          "FastReport.OpenSource.Web": "2021.4.13",
+          "FastReport.OpenSource": "2021.3.15",
+          "FastReport.OpenSource.Data.MySql": "2021.3.0",
+          "FastReport.OpenSource.Export.PdfSimple": "2021.3.15",
+          "FastReport.OpenSource.Web": "2021.3.15",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.6",
           "Service": "1.0.0",
           "Swashbuckle.AspNetCore": "6.1.5"
@@ -3519,10 +3481,10 @@
         "lib/netstandard1.6/de-DE/Faker.NETCore.resources.dll"
       ]
     },
-    "FastReport.Compat/2021.3.0": {
-      "sha512": "KXswGBLGq+tEeAUXr6OqQ+wae/1BmwD/G/E8GblRp/xjf9d9pZOGg9OqNOb6Fddph0ootqfEhk6k8UI4+YRmUw==",
+    "FastReport.Compat/2021.2.7": {
+      "sha512": "GIWCBqxu8+Cnv6xad8LSCPTYCMDId6HPmUqtYfC1JqCVN4ppzAgWZWcbr5uZf+isyHGTADSlNYBi7RZLMA7a4w==",
       "type": "package",
-      "path": "fastreport.compat/2021.3.0",
+      "path": "fastreport.compat/2021.2.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3530,7 +3492,7 @@
         "build/netcoreapp3.0/FastReport.Compat.targets",
         "build/netcoreapp3.0/lib/Any/FastReport.Compat.dll",
         "build/netcoreapp3.0/lib/Win/FastReport.Compat.dll",
-        "fastreport.compat.2021.3.0.nupkg.sha512",
+        "fastreport.compat.2021.2.7.nupkg.sha512",
         "fastreport.compat.nuspec",
         "frlogo192.png",
         "lib/net40/FastReport.Compat.dll",
@@ -3541,10 +3503,10 @@
         "runtimes/any/lib/netcoreapp3.0/FastReport.Compat.dll"
       ]
     },
-    "FastReport.OpenSource/2021.4.13": {
-      "sha512": "IzZicQrbjwck3WmrvoanXKABlL2jKlr2vA298BfNq+gbl/8lOZRvfiWUTqmWgrTZ+ZcfNhD+7Z+j2LzotRj1xg==",
+    "FastReport.OpenSource/2021.3.15": {
+      "sha512": "6VE4J3zXMuPyDTe7cJsFpum4LEU4xV+sLPCMW2HjOhwqhqqz7m4LLfXUSoH99xPHBG82bitPeZL01pTGgta6xA==",
       "type": "package",
-      "path": "fastreport.opensource/2021.4.13",
+      "path": "fastreport.opensource/2021.3.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3552,7 +3514,7 @@
         "build/FastReport.OpenSource.props",
         "buildMultiTargeting/FastReport.OpenSource.props",
         "buildTransitive/FastReport.OpenSource.props",
-        "fastreport.opensource.2021.4.13.nupkg.sha512",
+        "fastreport.opensource.2021.3.15.nupkg.sha512",
         "fastreport.opensource.nuspec",
         "frlogo192.png",
         "lib/net40/FastReport.dll",
@@ -3561,19 +3523,6 @@
         "lib/netstandard2.0/FastReport.xml",
         "lib/netstandard2.1/FastReport.dll",
         "lib/netstandard2.1/FastReport.xml"
-      ]
-    },
-    "FastReport.OpenSource.Data.MsSql/2021.4.0": {
-      "sha512": "m2L9FcuHr+cb9pahVJorWhYok+nWxssW8Wq6kiSC3RDB97i+EE4eA+naBHc5Y+t6oVXqMNRgfzt3tGEiyFdTJQ==",
-      "type": "package",
-      "path": "fastreport.opensource.data.mssql/2021.4.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "fastreport.opensource.data.mssql.2021.4.0.nupkg.sha512",
-        "fastreport.opensource.data.mssql.nuspec",
-        "lib/net452/FastReport.Data.MsSql.dll",
-        "lib/netstandard2.0/FastReport.Data.MsSql.dll"
       ]
     },
     "FastReport.OpenSource.Data.MySql/2021.3.0": {
@@ -3589,28 +3538,28 @@
         "lib/netstandard2.0/FastReport.Data.MySql.dll"
       ]
     },
-    "FastReport.OpenSource.Export.PdfSimple/2021.4.13": {
-      "sha512": "D+W4y5R9UbVTZl9pVIkx8oSa3KYxZNnGncJIw4cIoGu94szY5htsgjehYRNe3Bt4kfPXYZQtU3k5XLUhr0LKHw==",
+    "FastReport.OpenSource.Export.PdfSimple/2021.3.15": {
+      "sha512": "tIKkfdkLdhr1AJ9HcHmsm8OiEpb+nCzuxdmZcjZbg3y85rBl89mcsy4/6qgKRwd3eLVoMu7YhoyK8wwCeDoydg==",
       "type": "package",
-      "path": "fastreport.opensource.export.pdfsimple/2021.4.13",
+      "path": "fastreport.opensource.export.pdfsimple/2021.3.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "fastreport.opensource.export.pdfsimple.2021.4.13.nupkg.sha512",
+        "fastreport.opensource.export.pdfsimple.2021.3.15.nupkg.sha512",
         "fastreport.opensource.export.pdfsimple.nuspec",
         "lib/net40/FastReport.OpenSource.Export.PdfSimple.dll",
         "lib/netstandard2.0/FastReport.OpenSource.Export.PdfSimple.dll"
       ]
     },
-    "FastReport.OpenSource.Web/2021.4.13": {
-      "sha512": "cttclpIsh39350CBNDH2ysVEs5fyGKo/waGmuZ0IBkuWffY+Y0A/TKBd5n/TlUJRxpQMC+xiBZWWfayU/1VFAg==",
+    "FastReport.OpenSource.Web/2021.3.15": {
+      "sha512": "3Dt+H7x0F88siLBm8Fo2c8oqbqVSSqoF0cl5zy+4tdi+1YZm7wsTTNJq9wrQRMAoBXU+IIrNEf7+ykMEOyYgzw==",
       "type": "package",
-      "path": "fastreport.opensource.web/2021.4.13",
+      "path": "fastreport.opensource.web/2021.3.15",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "FastReport MIT license.md",
-        "fastreport.opensource.web.2021.4.13.nupkg.sha512",
+        "fastreport.opensource.web.2021.3.15.nupkg.sha512",
         "fastreport.opensource.web.nuspec",
         "frlogo192.png",
         "lib/netstandard2.0/FastReport.OpenSource.Web.dll",
@@ -6256,74 +6205,6 @@
         "ref/xamarinwatchos10/_._",
         "system.console.4.3.0.nupkg.sha512",
         "system.console.nuspec"
-      ]
-    },
-    "System.Data.SqlClient/4.4.3": {
-      "sha512": "D1hEOS1oPLJ6WcGCzpTWe8SauWVxnDoDTUWhv5XCNdRm/QeSUk4BQ3ZDe7BH+zNVHDBkPYjVzpVjnCl43eOSGg==",
-      "type": "package",
-      "path": "system.data.sqlclient/4.4.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net451/System.Data.SqlClient.dll",
-        "lib/net46/System.Data.SqlClient.dll",
-        "lib/net461/System.Data.SqlClient.dll",
-        "lib/netstandard1.2/System.Data.SqlClient.dll",
-        "lib/netstandard1.3/System.Data.SqlClient.dll",
-        "lib/netstandard2.0/System.Data.SqlClient.dll",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net451/System.Data.SqlClient.dll",
-        "ref/net46/System.Data.SqlClient.dll",
-        "ref/net461/System.Data.SqlClient.dll",
-        "ref/net461/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/System.Data.SqlClient.dll",
-        "ref/netstandard1.2/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/de/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/es/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/fr/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/it/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/ja/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/ko/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/ru/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/zh-hans/System.Data.SqlClient.xml",
-        "ref/netstandard1.2/zh-hant/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/System.Data.SqlClient.dll",
-        "ref/netstandard1.3/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/de/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/es/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/fr/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/it/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/ja/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/ko/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/ru/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/zh-hans/System.Data.SqlClient.xml",
-        "ref/netstandard1.3/zh-hant/System.Data.SqlClient.xml",
-        "ref/netstandard2.0/System.Data.SqlClient.dll",
-        "ref/netstandard2.0/System.Data.SqlClient.xml",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/unix/lib/netstandard1.3/System.Data.SqlClient.dll",
-        "runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net451/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net46/System.Data.SqlClient.dll",
-        "runtimes/win/lib/net461/System.Data.SqlClient.dll",
-        "runtimes/win/lib/netstandard1.3/System.Data.SqlClient.dll",
-        "runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll",
-        "system.data.sqlclient.4.4.3.nupkg.sha512",
-        "system.data.sqlclient.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
       ]
     },
     "System.Diagnostics.Debug/4.3.0": {

@@ -1,3 +1,4 @@
+using Api.Domain.Interfaces.Services.Reports;
 using Api.Domain.Interfaces.Services.User;
 using Api.Service;
 using Api.Service.Services;
@@ -11,6 +12,7 @@ namespace Api.CrossCutting.DependecyInjection
         {
             serviceColletion.AddTransient<IUserService, UserService>();
             serviceColletion.AddTransient<ILoginService, LoginService>();
+            serviceColletion.AddTransient<IReportUserService, ReportUserService>();
         }
     }
 }
